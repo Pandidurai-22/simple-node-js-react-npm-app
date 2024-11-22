@@ -15,7 +15,7 @@ pipeline {
         stage('Deliver'){
             steps{
                 sh './jenkins/scripts/deliver.sh'
-                input message: "Finished process for pipeline? click to proceed
+                input message: "Finished process for pipeline? click to proceed"
                 sh './jenkins/scripts/kill.sh'
             }
         }
